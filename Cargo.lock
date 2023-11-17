@@ -740,9 +740,9 @@ dependencies = [
 
 [[package]]
 name = "bevy_pixel_camera"
-version = "0.12.0"
+version = "0.12.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ff9daf4e359523f960fb6fa39947b295044986db84ffca22dc503242f5fab948"
+checksum = "6dca027296f12f305de6f121fe27115fb15a6525cf3e31868050e3caf5b75eaa"
 dependencies = [
  "bevy",
 ]
@@ -1690,7 +1690,7 @@ dependencies = [
  "vec_map",
  "wasm-bindgen",
  "web-sys",
- "windows 0.44.0",
+ "windows 0.48.0",
 ]
 
 [[package]]
