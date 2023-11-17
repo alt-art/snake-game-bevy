@@ -16,6 +16,17 @@ bevy = "0.12.0"
 bevy_pixel_camera = "0.12.1"
 rand = "0.8.5"
 
+[lints.clippy]
+all = "warn" 
+pedantic = "warn"
+nursery = "warn"
+cargo = "warn"
+perf = "warn"
+str_to_string = "warn"
+multiple_crate_versions = "allow"
+needless_pass_by_value = "allow"
+cast_precision_loss = "allow"
+
 [profile.dev]
 opt-level = 1
 

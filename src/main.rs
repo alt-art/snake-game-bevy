@@ -1,17 +1,3 @@
-#![warn(
-    clippy::all,
-    clippy::pedantic,
-    clippy::nursery,
-    clippy::cargo,
-    clippy::perf,
-    clippy::str_to_string
-)]
-#![allow(
-    clippy::multiple_crate_versions,
-    clippy::needless_pass_by_value,
-    clippy::cast_precision_loss
-)]
-
 use std::{
     fmt::{Debug, Formatter},
     path::{Path, PathBuf},
