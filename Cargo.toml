@@ -1,0 +1,46 @@
+[package]
+name = "snake-game-bevy"
+description = "A simple snake game made with Bevy"
+repository = "https://github.com/alt-art/snake-game-bevy"
+keywords = ["bevy", "snake", "game"]
+categories = ["game", "graphics", "2d"]
+readme = "README.md"
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = "0.12.0"
+bevy_pixel_camera = "0.12.0"
+rand = "0.8.5"
+
+[profile.dev]
+opt-level = 1
+
+[profile.dev.package."*"]
+opt-level = 3
+
+[package.metadata.deb]
+name = "snake-game-bevy"
+maintainer = "Pedro Henrique Mendes <pedromendescraft@gmail.com>"
+copyright = "2023, Pedro Henrique Mendes <pedromendescraft@gmail.com>"
+license-file = ["LICENSE", "0"]
+extended-description = "A simple snake game made with Bevy"
+section = "utils"
+priority = "optional"
+assets = [
+    # Binary
+    ["target/release/snake-game-bevy", "/usr/bin/", "111"],
+    # Desktop file
+    ["resources/snake-game-bevy.desktop", "/usr/share/applications/", "644"],
+]
+
+[package.metadata.generate-rpm]
+assets = [
+    # Binary
+    { source = "target/release/snake-game-bevy", dest = "/usr/bin/snake-game-bevy", mode = "111" },
+    # Desktop file
+    { source = "resources/snake-game-bevy.desktop", dest = "/usr/share/applications/snake-game-bevy.desktop", mode = "644" },
+]
