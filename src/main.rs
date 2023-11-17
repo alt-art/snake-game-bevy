@@ -19,10 +19,11 @@ use std::{
 };
 
 use bevy::{
+    app::AppExit,
     asset::io::embedded::EmbeddedAssetRegistry,
     core::FrameCount,
     prelude::*,
-    window::{PrimaryWindow, WindowMode}, app::AppExit,
+    window::{PrimaryWindow, WindowMode},
 };
 
 use bevy_pixel_camera::{PixelCameraPlugin, PixelZoom};
