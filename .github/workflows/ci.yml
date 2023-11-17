@@ -18,6 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: Swatinem/rust-cache@v2
+      - name: Install dependencies
+        run: sudo apt install g++ pkg-config libx11-dev libasound2-dev libudev-dev
       - name: Run cargo fmt
         run: cargo fmt --all -- --check
       - name: Run tests
