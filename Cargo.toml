@@ -13,7 +13,7 @@ edition = "2021"
 
 [dependencies]
 bevy = "0.12.1"
-bevy_pixel_camera = "0.12.1"
+bevy_pixel_camera = "0.13.0"
 rand = "0.8.5"
 
 [lints.clippy]
